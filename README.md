@@ -1,4 +1,4 @@
-# THE YUMMY PIZZA
+# THE YUMMi PIZZA
 
 The app is upgrated
 

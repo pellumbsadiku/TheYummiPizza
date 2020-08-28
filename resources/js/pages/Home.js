@@ -4,19 +4,23 @@ import AddToCart from "../components/AddToCart";
 import { inject, observer } from "mobx-react";
 import Form from "antd/lib/form/Form";
 import Background from './images/background_image.png';
+
+
 var sectionStyle = {
     
     width: "1200px",
     height: "400px",
     backgroundPosition: "center",
     margin:"0 auto",
-    marginTop:"40px ",
+    marginTop:"90px ",
     marginBottom:"50px",
     backgroundSize: "cover",
     backgroundImage: "url(" + Background + ")"
   };
 
 const { Meta } = Card;
+
+
 
 @inject("pizzaStore")
 @observer
@@ -26,12 +30,18 @@ class Home extends Component {
         getPizzaList();
     }
 
+    
+
     render() {
+       
         const { loading, pizzaList } = this.props.pizzaStore;
         return (
+            
          
             <Form>
               <section style={ sectionStyle }>
+            
+     
       </section>
             <List
                 style={{paddingTop:20}}

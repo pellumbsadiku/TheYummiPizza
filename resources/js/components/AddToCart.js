@@ -9,7 +9,7 @@ class AddToCart extends Component {
     render() {
         const { addQuanity, removeQuantity } = this.props.pizzaStore;
         const { id, quantity } = this.props;
-        if (quantity >= 1) {
+        if (quantity >= 1)  {
             return (
                 <div style={{ marginTop: 20, display: "flex" }}>
                     <Button
@@ -33,6 +33,8 @@ class AddToCart extends Component {
                 </div>
             );
         }
+        
+       
         return (
             <Button
                 onClick={() => addQuanity(id)}

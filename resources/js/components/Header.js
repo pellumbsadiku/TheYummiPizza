@@ -34,8 +34,13 @@ export default class extends Component {
                     display: "flex",
                     backgroundColor: "#FFA500",
                     alignItems: "center",
+                    position:"fixed",
+                    width:"100%",
+                    zIndex:1,
+                   
                     
                 }}
+               
             >
                 
                 <Link

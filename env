@@ -2,7 +2,7 @@ APP_NAME=Laravel
 APP_ENV=local
 APP_KEY=base64:q1FBGprmQfi14vEr8Yud/VEO9VKFPiqgZKynw6OYc6g=
 APP_DEBUG=true
-APP_URL=http://qetu url
+APP_URL=https://theyummpizza.herokuapp.com/
 
 LOG_CHANNEL=stack
 

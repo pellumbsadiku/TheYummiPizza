@@ -4,8 +4,6 @@ import { observer, inject } from "mobx-react";
 import { set } from "lodash";
 import AddToCart from "./AddToCart";
 
-
-
 @inject("pizzaStore", "authStore")
 @observer
 class CartDrawer extends Component {
@@ -15,7 +13,7 @@ class CartDrawer extends Component {
         const { isAuthenticated, setModalVisible } = this.props.authStore;
         const { onClose, visible  } = this.props;
         const closenotif = () => document.getElementById("notif").remove()
-        
+       
       
         
         return (
@@ -74,16 +72,21 @@ class CartDrawer extends Component {
                                 <Button
                                     style={{ width: "100%" }}
                                     onClick={() => {
+                                        
                                         onClose();
                                         !isAuthenticated
                                             ? setModalVisible(true)
                                             : order();
                                     }}
+                                   
                                 >
                                     Checkout
+                                    
                                 </Button>
                                 
+                               
                             </>
+                           
                         )
                     }
                    

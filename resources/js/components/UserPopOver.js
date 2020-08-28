@@ -21,11 +21,23 @@ class UserPopOver extends Component {
 
        
         return (
+            
             <Popover
-                content={
-                    <div style={{ display: "flex", flexDirection: "column" }}>
-                        <Link to={ROUTES.ORDERS}>My Orders</Link>
-                        <a
+              
+               
+                trigger="click"
+                visible={this.state.visible}
+                //onVisibleChange={this.handleVisibleChange}
+            >
+               
+                 <Link style={{textDecoration:"none", color:"white", paddingLeft:"10px", paddingRight:"10px"}} to={ROUTES.ORDERS}>My Orders</Link>
+                <UserOutlined
+                    type="primary"
+                    style={{ fontSize: 20, margin: "0px 10px" }}
+                />
+                {name}
+                <span class="badge badge-dark" style={{paddingLeft:"10px", marginLeft:15}}>
+                <a style={{textDecoration:"none", color:"White", fontSize:16, padding:"3px , 3px"}}
                             onClick={() => {
                               logout();
                               
@@ -33,17 +45,7 @@ class UserPopOver extends Component {
                         >
                             Logout
                         </a>
-                    </div>
-                }
-                trigger="click"
-                visible={this.state.visible}
-                onVisibleChange={this.handleVisibleChange}
-            >
-                <UserOutlined
-                    type="primary"
-                    style={{ fontSize: 20, margin: "0px 10px" }}
-                />
-                {name}
+                        </span>
             </Popover>
 
             

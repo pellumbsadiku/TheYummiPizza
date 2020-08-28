@@ -11,18 +11,7 @@ import axios from 'axios';
 const delivery = 5.0;
 const convert=0.9;
 
-function   handleDelete(id) {
-    
-    // remove from local state
-    const isNotId = item => item.id !== id;
-    const updatedItem= this.state.Item.filter(isNotId);
-    this.setState({ Item: updatedItem });
-    // make delete request to the backend
-    axios.delete(`/api/destroy/${id}`);
-     
-       
-    
-}
+
 
 function approve(id)
 {
@@ -147,9 +136,7 @@ class Orders extends Component {
                                            <h4>  <span class="badge badge-primary" >
   <a style={{padding:"5px", color:"White"}} href="#" onClick={()=>approve(item.id)}>Mark Delivered</a>
 </span> </h4>
-<h4>  <span class="badge badge-primary" >
-  <a style={{padding:"5px", color:"White"}} href="#" onClick={()=>handleDelete(item.id)}>Delete</a>
-</span> </h4>
+
                         <hr></hr>
                         
                     </div>

@@ -48,12 +48,11 @@ class OrderController extends Controller
         }
         return response()->json([
             'message' => 'Done, your order is on the way!'
+            
         ]);
+        
     }
-    public function destroy($id) {
-        Order::findOrFail($id)->delete();
-    }
-
+    
 
 }
 

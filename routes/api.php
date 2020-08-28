@@ -38,5 +38,6 @@ Route::group(['middleware' => 'api', 'prefix' => 'order'], function ($router) {
    
 });
 Route::put('/update', 'OrderController@update')->middleware('api');
-Route::delete('/destroy', 'OrderController@destroy')->middleware('api');
+
+
 

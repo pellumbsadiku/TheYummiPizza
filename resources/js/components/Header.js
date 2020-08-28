@@ -57,6 +57,7 @@ export default class extends Component {
                 
                         style={{ fontSize: 30, marginRight: 10, color:"Grey"}}
                         onClick={this.showDrawer}
+                        
                     />
                 </Badge>
 

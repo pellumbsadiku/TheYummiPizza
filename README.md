@@ -4,7 +4,6 @@ It's a Project to manage pizza orders.
 
 #### URL:
 
-https://ancient-woodland-22839.herokuapp.com/
 
 ## Getting Started
 

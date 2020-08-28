@@ -18,6 +18,8 @@ class UserPopOver extends Component {
     render() {
         const { logout, user } = this.props.authStore;
         const { name = "" } = user;
+
+       
         return (
             <Popover
                 content={
@@ -25,7 +27,8 @@ class UserPopOver extends Component {
                         <Link to={ROUTES.ORDERS}>My Orders</Link>
                         <a
                             onClick={() => {
-                                logout();
+                              logout();
+                              
                             }}
                         >
                             Logout

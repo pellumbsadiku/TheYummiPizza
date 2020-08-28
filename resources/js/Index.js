@@ -9,10 +9,12 @@ import { BrowserRouter } from "react-router-dom";
 
 import MainLayout from "./MainLayout";
 
+
 function App() {
     return (
         <Provider {...new Store()}>
             <BrowserRouter>
+           
                 <MainLayout />
             </BrowserRouter>
         </Provider>

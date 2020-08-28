@@ -55,6 +55,7 @@ export default class AuthStore extends FetchBase {
             this.user = data;
         } catch (e) {}
     };
+    
 
     logout = async () => {
         try {
@@ -62,5 +63,6 @@ export default class AuthStore extends FetchBase {
             this.isAuthenticated = false;
             localStorage.removeItem("accessToken");
         } catch (e) {}
+      
     };
 }

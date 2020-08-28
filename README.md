@@ -1,15 +1,14 @@
 # THE YUMMY PIZZA
 
-It's a Project to manage pizza orders.
+The app is upgrated
 
 #### URL:
+https://theyummpizza.herokuapp.com/
 
 
-## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-### Prerequisites
 
 This project is created using laravel and react and used laravel/ui react for server side rendering
 
@@ -24,7 +23,7 @@ First of all, you need to setup the DATA BASE's data in your `.env` file, like:
 
 ```
 DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
+DB_HOST=remotemysql.com
 DB_PORT=3306
 DB_DATABASE=pizza
 DB_USERNAME=root
@@ -35,13 +34,15 @@ DB_PASSWORD=
 
 Run at terminal:
 
-`$ cd backend`
+`$ npm install`
 
 `$ composer install`
 
 `$ php artisan migrate`
 
 `$ php artisan db:seed`
+
+`$php artisan passport:install`
 
 `$ php artisan serve`
 
